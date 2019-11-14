@@ -19,7 +19,7 @@ Description de l'animal et sa situation...
 	<input type="file" name="photo"><br/>
 
 
-	<input type="submit" name="signaler" value="Signaler">
+	<input type="submit" name="OK" value="OK">
 
 </form>
 
