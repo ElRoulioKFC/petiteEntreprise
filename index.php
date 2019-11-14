@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Acceuil-Hippily</title>
-</head>
+<?php 
+$title = "acceuil";
+include_once(./includes/header.php);
+ ?>
 <body>
 ici ce sera le body
 </body>
-</html>
