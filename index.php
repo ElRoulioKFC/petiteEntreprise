@@ -1,18 +1,25 @@
-<?php 
+<?php
+session_start();
 $title = "acceuil";
-include_once(./includes/header.php);
+if isset($estConnecte) {
+	include_once('view/includes/headerCo.php');
+}
+
+if not(isset($estConnecte)){
+	include_once('view/includes/header.php');
+}
+
  ?>
 <body>
-<form method="post" action="actions.php">
 
-
-nom : <input type="text" name="nom"/>
-Temps : <input type="text" name="temps"/>
-
-			
-	<input type="submit" value="OK">
-	</form>	
 <?php 
-$title = "acceuil";
-include_once"./includes/header.php";
+if not(isset($_GET['page']) {
+	include('view/includes/home.php')
+}
+include('view/includes/'.$_GET['page']);
+
+?>
+
+<?php
+include_once("view/includes/footer.php");
  ?>
