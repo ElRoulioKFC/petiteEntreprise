@@ -16,7 +16,8 @@ $result = mysqli_query($conn, $sql);
 			echo "<td>".$row["nom"]."</td>";
 			echo "<td>".$row["mail"]."</td>";
 		}
-		
 		echo "</tr>";
+	}
+	echo "</table>";
 
 include "include/footer.php" ?>
