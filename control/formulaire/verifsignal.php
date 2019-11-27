@@ -1,7 +1,7 @@
 <?php 
 session_start();
 $errors = [];
-
+ 
 if (!isset($_POST["description"]) ||
     $_POST["description"] == ""){
     $errors[] = "description";
@@ -24,4 +24,9 @@ if (count($errors) > 0) {
 } else {
 	header("Location: index.php");
 }
+
+
+
+
 ?>
+
