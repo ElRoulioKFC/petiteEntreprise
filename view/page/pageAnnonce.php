@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream:pages/pageAnnonce.php
 <?php include "include/header.php"
 $sql="SELECT * FROM ";
@@ -21,6 +22,8 @@ $result = mysqli_query($conn, $sql);
 		echo "</tr>";
 
 =======
+=======
+>>>>>>> Stashed changes
 <?php include "include/header.php"
 $sql="SELECT * FROM ";
 $result = mysqli_query($conn, $sql);
@@ -43,5 +46,8 @@ $result = mysqli_query($conn, $sql);
 	}
 	echo "</table>";
 
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes:view/pageAnnonce.php
+=======
+>>>>>>> Stashed changes
 include "include/footer.php" ?>
