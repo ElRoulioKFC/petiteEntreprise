@@ -1,7 +1,4 @@
-<?php
-	include_once "db.php";
-	session_start();
-	?>
+
 	<!DOCTYPE html> 
 	<html>
 		<head>
@@ -23,4 +20,5 @@
 			<a href='index.php?page=contacts'><article id='a4'>Contacts</article></a>
 		</section>
 ";
+
 	</header>

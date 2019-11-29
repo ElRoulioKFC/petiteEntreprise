@@ -1,8 +1,4 @@
 
-<?php
-	include_once "db.php";
-	session_start();
-	?>
 	<!DOCTYPE html> 
 	<html>
 		<head>
@@ -12,7 +8,7 @@
 		</head>
 	<body>
 		<header>
-			photo du logo
+			<img src="view/images/logo.png" height="30px" width="30px">
 			<h1>HIPILLY</h1>
 			<h2>They'll live hipilly ever after</h2>
 			include le formulaire de connection

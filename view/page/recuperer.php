@@ -1,4 +1,3 @@
-<?php include "include/header.php" ?>
 
 <form method="post" action="verifrecup.php">
 
@@ -24,7 +23,6 @@ Description de l'animal et sa situation...
 </form>
 
 
-<?php include "includes/footer.php" ?>
 
 
 

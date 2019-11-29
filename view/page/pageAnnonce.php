@@ -1,4 +1,4 @@
-<?php include "include/header.php"
+<?php 
 $sql="SELECT * FROM ";
 $result = mysqli_query($conn, $sql);
 
