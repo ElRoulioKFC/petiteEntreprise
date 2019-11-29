@@ -8,10 +8,10 @@
 		</head>
 	<body>
 		<header>
-			<img src="view/images/logo.png" height="30px" width="30px">
+			
 			<h1>HIPILLY</h1>
 			<h2>They'll live hipilly ever after</h2>
-			include le formulaire de connection
+			
 		<section>
 			<a href='index.php?page=home'><article id='a1'>Accueil</article></a>
 			<a href='index.php?page=recuperer'><article id='a3'>Récupérer</article></a>

@@ -1,4 +1,3 @@
-<?php include "includes/header.php" ?>
 // include la géolocalisation
 
 
@@ -33,4 +32,3 @@ Description de l'animal et sa situation...
 </form>
 
 
-<?php include "includes/footer.php" ?>
