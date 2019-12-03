@@ -23,6 +23,7 @@ if (count($errors) > 0) {
 } else {
 	header("Location: .");
 }
+
 ?>
 
 
