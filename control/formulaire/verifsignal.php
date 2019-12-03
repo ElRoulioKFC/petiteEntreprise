@@ -21,12 +21,8 @@ if (count($errors) > 0) {
 	$_SESSION["old"] = $_POST;
 	header("Location: signaler.php");
 } else {
-	header("Location: index.php");
+	header("Location: .");
 }
-
-
-
-
 ?>
 
 
