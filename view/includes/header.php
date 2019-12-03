@@ -4,7 +4,7 @@
 		<head>
 			<meta charset="UTF-8">
 			<title>Hipilly</title>
-			<link rel="stylesheet" type="text/css" href="./styles/style.cs"/>
+			<link rel="stylesheet" type="text/css" href="view/styles/style.css"/>
 		</head>
 	<body>
 		<header>
@@ -19,5 +19,5 @@
 			<a href='index.php?page=pageAnnonce'><article id='a3'>Annonce</article></a>
 			<a href='index.php?page=contacts'><article id='a4'>Contacts</article></a>
 		</section>
-";
+
 	</header>

@@ -1,4 +1,5 @@
-h1 {text-orientation: 25px}
+h1 {text-orientation: 25px
+	color : red;}
 
 section{
 	display:flex;

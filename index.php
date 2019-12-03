@@ -14,8 +14,9 @@ if (! ( isset ($estConnecte))){
 if (!(isset($_GET['page']))) {
 	include('view/page/home.php');
 }
-
+if (isset($_GET['page'])){
 include('view/page/'.$_GET['page'].'.php');
+}
 ?>
 
 <?php
