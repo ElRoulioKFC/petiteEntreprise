@@ -1,5 +1,5 @@
 
-<form method="post" action="verifrecup.php">
+<form method="post" action="./control/formulaire/verifsignal.php">
 
 
 	<label>Type d'animal :</label>
