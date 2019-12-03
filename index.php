@@ -16,12 +16,9 @@ if (!(isset($_GET['page']))) {
 }
 if (isset($_GET['page'])){
 include('view/page/'.$_GET['page'].'.php');
-
-if (($_GET['page'])="recuperer"){
-	include()
-}}
+}
 ?>
 
 <?php
 include_once("view/includes/footer.php");
- ?>
+?>
