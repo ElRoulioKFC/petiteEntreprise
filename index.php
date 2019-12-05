@@ -1,12 +1,13 @@
 <?php
 session_start();
-$title = "acceuil";
+include_once('model/db.php');
 if (isset ($estConnecte)) {
 	include_once('view/includes/headerCo.php');
 }
 if (! ( isset ($estConnecte))){
 	include_once('view/includes/header.php');
 }
+
  ?>
 
 
@@ -16,7 +17,9 @@ if (!(isset($_GET['page']))) {
 }
 if (isset($_GET['page'])){
 include('view/page/'.$_GET['page'].'.php');
-}
+if (($_GET['page']) == ("recuperer")){
+	include_once('control/formulaire/verifsignal.php');
+}}
 ?>
 
 <?php

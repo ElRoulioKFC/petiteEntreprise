@@ -1,5 +1,7 @@
 
+
 <form method="post" action="./control/formulaire/verifsignal.php">
+
 
 
 	<label>Type d'animal :</label>

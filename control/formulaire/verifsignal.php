@@ -19,13 +19,11 @@ if (!isset($_POST["recup"]) ||
 if (count($errors) > 0) {
 	$_SESSION["errors"] = $errors;
 	$_SESSION["old"] = $_POST;
-	header("Location: signaler.php");
 } else {
-	header("Location: .");
+
+	header("Location: index.php");
+
+
 }
-
-?>
-
-
 
 
