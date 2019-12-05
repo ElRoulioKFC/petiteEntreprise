@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $errors = [];
  
 if (!isset($_POST["description"]) ||
@@ -22,8 +23,7 @@ if (count($errors) > 0) {
 } else {
 
 	header("Location: index.php");
-
-
 }
 
 
+?>

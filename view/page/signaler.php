@@ -1,30 +1,20 @@
 // include la géolocalisation
-
-<form method="post" action="control/formulaire/signaler.php">
-
-	<!--<input type="button" name="gps" value="Me géolocaliser"><br/>-->
-
-	<label for="adresse"> adresse :</label><br/>
-	<textarea id="adresse" name="adresse" rows="5" cols="33" required="required">
-		adresse pour l'instant
-	</textarea><br/>
-
-	<label for="nomPhoto"> nomPhoto :</label><br/>
-	<textarea id="nomPhoto" name="nomPhoto" rows="5" cols="33" required="required">
-		nomPhoto pour l'instant
-	</textarea><br/>
-
-
-	<label>Type d'animal :</label>
-	<select name ="animal">
+<form method="post" action="verifsignal.php">
+<table align="center">
+	<tr><td colspan="2"><input type="button" name="gps" value="Me géolocaliser"></tr>
+	<tr>
+	<td><label>Type d'animal :</label></td>
+	<td><select>
 		<option value="chat">Chat</option>
 		<option value="chien">Chien</option>
 		<option value="autre">Autre</option>
-	</select><br/>
-
-	<label for="description">Description de l'animal :</label><br/>
-	<textarea id="description" name="description" rows="5" cols="33" required="required">
+	</select></td>
+	</tr>
+	<tr>
+	<td><label for="description">Description de l'animal :</label></td>
+	<td><textarea id="description" name="description" rows="5" cols="33">
 Description de l'animal et sa situation...
+
 	</textarea><br/>
 
 	<label>Photo :</label>
@@ -38,7 +28,5 @@ Description de l'animal et sa situation...
 	<label>J'ai récupéré l'animal</label> <br/>
 
 	<input type="submit" name="signaler" value="Signaler" >
-
-</form>
 
 
