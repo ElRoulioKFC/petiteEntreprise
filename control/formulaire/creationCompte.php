@@ -15,13 +15,13 @@
         }*/
 
         if(filter_var($mail, FILTER_VALIDATE_EMAIL)) { //verifie l'email
-                header('Location: connect_disconnect.php');
+                header('Location: ./index.php');
         }
-        else{header('Location: newUser.php');}
+        else{header('Location: ./view/page/nouvelUtilisateur.php');}
 
         if(preg_match('`[0-9]{10}`', $telephone)) { //verifie le numero de telephone
-                header('Location: connect_disconnect.php');
+                header('Location: ./index.php');
         }
-        else{header('Location: newUser.php');}
+        else{header('Location: ./view/page/nouvelUtilisateur.php');}
  
  ?>
