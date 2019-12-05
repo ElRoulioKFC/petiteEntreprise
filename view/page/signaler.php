@@ -28,7 +28,7 @@ Description de l'animal et sa situation...
 	</textarea><br/>
 
 	<label>Photo :</label>
-	<input type="file" name="photo" required="required"><br/>
+	<input type="file" name="photo"><br/>
 
 	
 	<input type="radio" name="urgence" value="urgent" >
