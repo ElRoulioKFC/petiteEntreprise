@@ -1,5 +1,9 @@
 
+<<<<<<< Updated upstream
 <form method="post" action="verifrecup.php">
+=======
+<form method="post" action="verifsignal.php">
+>>>>>>> Stashed changes
 
 
 	<label>Type d'animal :</label>

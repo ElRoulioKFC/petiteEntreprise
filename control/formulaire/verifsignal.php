@@ -20,9 +20,11 @@ if (!isset($_POST["recup"]) ||
 if (count($errors) > 0) {
 	$_SESSION["errors"] = $errors;
 	$_SESSION["old"] = $_POST;
-	header("Location: signaler.php");
 } else {
+<<<<<<< Updated upstream
 	header("Location: index.php");
+=======
+>>>>>>> Stashed changes
 }
 
 
