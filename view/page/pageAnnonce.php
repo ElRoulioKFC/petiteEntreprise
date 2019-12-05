@@ -1,4 +1,4 @@
-<form method="post" action="verifannonce.php">
+
 <?php 
 $result = mysqli_query($conn, "SELECT * FROM `annonces`");
 
@@ -16,8 +16,10 @@ $result = mysqli_query($conn, "SELECT * FROM `annonces`");
 			echo "<td>".$row["nom"]."</td>";
 			echo "<td>".$row["mail"]."</td>";
 		}
-		echo "<td><input type='radio' name='recup' value='recup'>
-		<label>J'ai récupéré l'animal</label> <br/></td>"
+
+		echo '<form method="post" action="verifannonce.php">';
+		echo "<td><input type='button' name='recup' value='récupéré'> </td>";
+		echo "</form>";
 		echo "</tr>";
 	}
 	echo "</table>";
