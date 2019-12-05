@@ -1,13 +1,16 @@
-h1 {text-orientation: 25px
-	color : red;}
+h1 {
+	text-orientation: 25px;
+	color : red;
+}
 
 section{
 	display:flex;
 	flex-direction:row;
-	width:500px;
+	width:50px;
 }
 
 article{
 	flex:1 1 auto;
 	height: 100px;
+	width: 200px;
 }
