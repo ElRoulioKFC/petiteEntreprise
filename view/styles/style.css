@@ -1,5 +1,16 @@
-h1 {text-orientation: 25px
-	color : red;}
+header{
+	background-color: (225,206,154);
+}
+h1 {
+	color:rgb(162,26,26);
+	text-align: center;
+	padding-right: 150px;
+}
+h2{
+	color:rgb(162,26,26);
+	text-align: center;
+	padding-left: 50px;
+}
 
 section{
 	display:flex;
@@ -9,6 +20,16 @@ section{
 
 article{
 	flex:1 1 auto;
-	height: 100px;
+	height: 50px;
 	width: 200px;
+	background-color: rgb(162,26,26);
+	color: rgb(254,245,226);
+}
+article a{
+	text-decoration: none;
+}
+article:hover{
+	height: 55px;
+	transition-duration: 0.3s;
+	border-radius: 0px 0px 5px 5px;
 }

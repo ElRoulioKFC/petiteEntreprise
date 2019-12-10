@@ -1,4 +1,3 @@
-<script type="text/javascript">
 	
 
 ////////////////////////////////// recuperer coordonnees
@@ -99,4 +98,3 @@ function showError(error) { //affiche les potentielles erreurs
 }
 
 
-</script>

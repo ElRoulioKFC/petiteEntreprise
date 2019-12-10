@@ -1,10 +1,3 @@
-<?php
-session_start();
-$_SESSION['cookie_user'] = "user";
-setcookie($_SESSION['cookie_user'], "", time() + (86400 * 30), "/"); //on creer un cookie pour savoir si l'utilisateur est connecté
-$_SESSION['page'] = "connect";
-?>
-
 	<!DOCTYPE html> 
 	<html>
 		<head>
@@ -18,16 +11,16 @@ $_SESSION['page'] = "connect";
 			<h1>HIPILLY</h1>
 			<h2>They'll live hipilly ever after</h2>
 			include le formulaire de connection
+
 		<div class="connexion">
 			<?php
             if(!isset($_COOKIE[$_SESSION['cookie_user']])) {
-                echo '<form action="./control/js/verifCompte.php" method="post">';
-                echo '<p>Votre nom : <input type="text" name="nom" required="required"/></p>';
-                echo '<p>Votre mdp : <input type="text" name="mdp" required="required"/></p>';
+                echo '<form method="post">';
+                echo '<p>Votre nom : <input type="text" name="nom" id="nom" required="required"/></p>';
+                echo '<p>Votre mdp : <input type="text" name="mdp" id="mdp"  required="required"/></p>';
                 echo '<p><input type="submit" value="Connexion"></p>';
                 echo '</form>';
-                
-                echo '<a href="./view/page/nouvelUtilisateur.php">Pas de compte ? Creez en un</a>';
+
             } else {
                 echo "Bonjour " . $_COOKIE[$_SESSION['cookie_user']];
                 echo "<br/>";
@@ -41,12 +34,8 @@ $_SESSION['page'] = "connect";
 			<a href='index.php?page=signaler'><article id='a2'>Signaler</article></a>
 			<a href='index.php?page=pageAnnonce'><article id='a3'>Annonce</article></a>
 			<a href='index.php?page=contacts'><article id='a4'>Contacts</article></a>
+			<a href='index.php?page=creationCompte'>Pas de compte ? Creez en un</a>
 		</section>
 
+
 	</header>
-	<body>
-		<?php include "./control/js/deconnexion.js"; //use deconnection() pour se deconnecter
-		include "./control/js/coordonnees";// use getCoord() pour connaitre les coordonnées de l'utilisateur
-		//use coordsByAdress(adresseHtml) pour connaitre les coordonnées de l'adresse
-		// use getAdresse() pour connaitre l'adresse
-		?> 

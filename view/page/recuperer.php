@@ -1,6 +1,6 @@
 
-<form method="post" action="./control/formulaire/verifsignal.php">
 
+<form method="post" action="./control/formulaire/verifsignal.php">
 
 	<label>Type d'animal :</label>
 	<select>
@@ -8,7 +8,6 @@
 		<option value="chien">Chien</option>
 		<option value="autre">Autre</option>
 	</select><br/>
-
 	<label for="description">Description de l'animal :</label><br/>
 	<textarea id="description" name="description" rows="5" cols="33">
 Description de l'animal et sa situation...
