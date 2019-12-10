@@ -1,18 +1,18 @@
 // include la géolocalisation
-
 <form method="post" action="control/formulaire/signaler.php">
 
-	<!--<input type="button" name="gps" value="Me géolocaliser"><br/>-->
 
-	<label for="adresse"> adresse :</label><br/>
-	<textarea id="adresse" name="adresse" rows="5" cols="33" required="required">
-		adresse pour l'instant
+	
+
+	<label for="adresse"> adresse (si le champs reste inchangé nous prendrons les coordonnées gps) :</label><br/>
+	<textarea id="adresse" name="adresse" rows="5" cols="33" >
+Je préfère prendre mes coordonnées gps.
 	</textarea><br/>
 
-	<label for="nomPhoto"> nomPhoto :</label><br/>
+	<!--<label for="nomPhoto"> nomPhoto :</label><br/>
 	<textarea id="nomPhoto" name="nomPhoto" rows="5" cols="33" required="required">
 		nomPhoto pour l'instant
-	</textarea><br/>
+	</textarea><br/> -->
 
 
 	<label>Type d'animal :</label>
@@ -28,15 +28,20 @@ Description de l'animal et sa situation...
 	</textarea><br/>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	<label>Photo :</label>
 	<input type="file" name="photo" required="required"><br/>
 =======
 	<!--<label>Photo :</label>
+=======
+
+	<label>Photo :</label>
+>>>>>>> Stashed changes
 	<input type="file" name="photo"><br/>
 >>>>>>> Stashed changes
 
 	
-	<input type="radio" name="urgence" value="urgent" >
+	<input type="radio" name="urgent" value="urgent" >
 	<label>Urgent</label> <br/>
 
 	<input type="radio" name="recup" value="recup" >

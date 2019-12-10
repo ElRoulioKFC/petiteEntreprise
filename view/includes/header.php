@@ -21,7 +21,7 @@
 		<div class="connexion">
 			<?php
             if(!isset($_COOKIE[$_SESSION['cookie_user']])) {
-                echo '<form action="./control/js/verifCompte.php" method="post">';
+                echo '<form action="control/formulaire/verifCompte.php" method="post">';
                 echo '<p>Votre nom : <input type="text" name="nom" required="required"/></p>';
                 echo '<p>Votre mdp : <input type="text" name="mdp" required="required"/></p>';
                 echo '<p><input type="submit" value="Connexion"></p>';
@@ -45,6 +45,7 @@
 		</section>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	</header>
 =======
 	</header>
@@ -54,4 +55,8 @@
 		//use coordsByAdress(adresseHtml) pour connaitre les coordonnées de l'adresse
 		// use getAdresse() pour connaitre l'adresse
 		?> 
+>>>>>>> Stashed changes
+=======
+
+	</header>
 >>>>>>> Stashed changes
