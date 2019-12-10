@@ -1,10 +1,3 @@
-<?php
-session_start();
-$_SESSION['cookie_user'] = "user";
-setcookie($_SESSION['cookie_user'], "", time() + (86400 * 30), "/"); //on creer un cookie pour savoir si l'utilisateur est connecté
-$_SESSION['page'] = "connect";
-?>
-
 	<!DOCTYPE html> 
 	<html>
 		<head>
@@ -18,6 +11,7 @@ $_SESSION['page'] = "connect";
 			<h1>HIPILLY</h1>
 			<h2>They'll live hipilly ever after</h2>
 			include le formulaire de connection
+
 		<div class="connexion">
 			<?php
             if(!isset($_COOKIE[$_SESSION['cookie_user']])) {
@@ -27,7 +21,6 @@ $_SESSION['page'] = "connect";
                 echo '<p><input type="submit" value="Connexion"></p>';
                 echo '</form>';
                 
-                echo '<a href="./view/page/nouvelUtilisateur.php">Pas de compte ? Creez en un</a>';
             } else {
                 echo "Bonjour " . $_COOKIE[$_SESSION['cookie_user']];
                 echo "<br/>";
@@ -41,12 +34,14 @@ $_SESSION['page'] = "connect";
 			<a href='index.php?page=signaler'><article id='a2'>Signaler</article></a>
 			<a href='index.php?page=pageAnnonce'><article id='a3'>Annonce</article></a>
 			<a href='index.php?page=contacts'><article id='a4'>Contacts</article></a>
+			<a href='index.php?page=nouvelUtilisateur'>Pas de compte ? Creez en un</a>
 		</section>
+
 
 	</header>
 	<body>
-		<?php include "./control/js/deconnexion.js"; //use deconnection() pour se deconnecter
-		include "./control/js/coordonnees";// use getCoord() pour connaitre les coordonnées de l'utilisateur
+		<?php include "control/js/deconnexion.js"; //use deconnection() pour se deconnecter
+		include "control/js/coordonnees.js";// use getCoord() pour connaitre les coordonnées de l'utilisateur
 		//use coordsByAdress(adresseHtml) pour connaitre les coordonnées de l'adresse
 		// use getAdresse() pour connaitre l'adresse
 		?> 

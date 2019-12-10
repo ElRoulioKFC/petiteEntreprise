@@ -1,7 +1,7 @@
 // include la géolocalisation
 
 <form method="post" action="control/formulaire/signaler.php">
-<table align="center">
+
 	<!--<input type="button" name="gps" value="Me géolocaliser"><br/>-->
 
 	<label for="adresse"> adresse :</label><br/>
@@ -27,15 +27,16 @@
 Description de l'animal et sa situation...
 	</textarea><br/>
 
-	<label>Photo :</label>
-	<!--<input type="file" name="photo"><br/>
+
+	<!--<label>Photo :</label>
+	<input type="file" name="photo"><br/>
 
 	
 	<input type="radio" name="urgence" value="urgent" >
 	<label>Urgent</label> <br/>
 
 	<input type="radio" name="recup" value="recup" >
-	<label>J'ai récupéré l'animal</label> <br/> -->
+	<label>J'ai récupéré l'animal</label> <br/>
 
 	<input type="submit" name="signaler" value="Signaler" >
 
