@@ -27,8 +27,13 @@
 Description de l'animal et sa situation...
 	</textarea><br/>
 
+<<<<<<< Updated upstream
 	<label>Photo :</label>
 	<input type="file" name="photo" required="required"><br/>
+=======
+	<!--<label>Photo :</label>
+	<input type="file" name="photo"><br/>
+>>>>>>> Stashed changes
 
 	
 	<input type="radio" name="urgence" value="urgent" >

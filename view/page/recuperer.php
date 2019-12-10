@@ -1,8 +1,14 @@
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <form method="post" action="verifrecup.php">
 =======
 <form method="post" action="verifsignal.php">
+>>>>>>> Stashed changes
+=======
+
+<form method="post" action="control/formulaire/verifsignal.php">
+
 >>>>>>> Stashed changes
 
 
