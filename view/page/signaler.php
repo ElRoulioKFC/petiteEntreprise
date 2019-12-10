@@ -17,6 +17,7 @@
 
 	<label>Type d'animal :</label>
 	<select name ="animal">
+
 		<option value="chat">Chat</option>
 		<option value="chien">Chien</option>
 		<option value="autre">Autre</option>
@@ -26,6 +27,7 @@
 	<textarea id="description" name="description" rows="5" cols="33" required="required">
 Description de l'animal et sa situation...
 	</textarea><br/>
+
 
 
 	<!--<label>Photo :</label>
