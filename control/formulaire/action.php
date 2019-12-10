@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	if($_SESSION['page'] == "connect"){ //pour la connexion
 
     	if(isset($_POST['nom'], $_POST['mdp']) and !empty($_POST['nom'] and $_POST['mdp'])){ 

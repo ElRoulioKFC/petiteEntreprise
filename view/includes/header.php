@@ -15,12 +15,12 @@
 		<div class="connexion">
 			<?php
             if(!isset($_COOKIE[$_SESSION['cookie_user']])) {
-                echo '<form action="control/formulaire/verifCompte.php" method="post">';
-                echo '<p>Votre nom : <input type="text" name="nom" required="required"/></p>';
-                echo '<p>Votre mdp : <input type="text" name="mdp" required="required"/></p>';
+                echo '<form method="post">';
+                echo '<p>Votre nom : <input type="text" name="nom" id="nom" required="required"/></p>';
+                echo '<p>Votre mdp : <input type="text" name="mdp" id="mdp"  required="required"/></p>';
                 echo '<p><input type="submit" value="Connexion"></p>';
                 echo '</form>';
-                
+
             } else {
                 echo "Bonjour " . $_COOKIE[$_SESSION['cookie_user']];
                 echo "<br/>";
@@ -34,7 +34,7 @@
 			<a href='index.php?page=signaler'><article id='a2'>Signaler</article></a>
 			<a href='index.php?page=pageAnnonce'><article id='a3'>Annonce</article></a>
 			<a href='index.php?page=contacts'><article id='a4'>Contacts</article></a>
-			<a href='index.php?page=nouvelUtilisateur'>Pas de compte ? Creez en un</a>
+			<a href='index.php?page=creationCompte'>Pas de compte ? Creez en un</a>
 		</section>
 
 

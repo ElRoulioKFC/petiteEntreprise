@@ -1,7 +1,7 @@
         
         CREER UN COMPTE (les * sont obligatoire)
 
-        <form method="post" action="control/formulaire/creationCompte.php" >
+        <form method="post" >
         
         <table><tr><td>Votre nom *: </td><td><input type="text" name="nom" required="required"/></td></tr>
 

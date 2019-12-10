@@ -1,6 +1,5 @@
 
 <?php
-include_once('../../model/db.php');
 
 
 //$adresse= getAdresse();
@@ -23,5 +22,4 @@ $result = mysqli_query($conn,
 	
 var_dump(mysqli_error($conn));
 
-//header("Location:http://10.103.1.202/~GEYER/");
 ?>

@@ -1,7 +1,6 @@
 <?php
 
 
-        include_once('../../model/db.php');
 
         $nom =  mysqli_real_escape_string($conn,$_POST['nom']);
         $association =  mysqli_real_escape_string($conn,$_POST['association']);
@@ -36,5 +35,4 @@
     
         var_dump(mysqli_error($conn));
 
-        header("Location:http://10.103.1.202/~GEYER/");
  ?>
