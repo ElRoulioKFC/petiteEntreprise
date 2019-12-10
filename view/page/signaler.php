@@ -1,5 +1,6 @@
 // include la géolocalisation
 
+	<!--<input type="button" name="gps" value="Me géolocaliser"><br/>-->
 
 <form method="post" action="verifsignal.php">
 
@@ -28,6 +29,7 @@ Description de l'animal et sa situation...
 	<label>J'ai récupéré l'animal</label> <br/>
 
 	<input type="submit" name="signaler" value="Signaler">
+
 
 </form>
 
