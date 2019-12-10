@@ -3,10 +3,18 @@
 include_once('../../model/db.php');
 
 
-$adresse =  mysqli_real_escape_string($conn,$_POST["adresse"]);
+//$adresse= getAdresse();
+//echo $adresse;
+$adresse = $_POST["adresse"];
 $animal =  mysqli_real_escape_string($conn,$_POST["animal"]);
-$nomPhoto =  mysqli_real_escape_string($conn,$_POST["nomPhoto"]);
+$nomPhoto = "test";
+// mysqli_real_escape_string($conn,$_POST["nomPhoto"]);
 $description =  mysqli_real_escape_string($conn,$_POST["description"]); 
+
+if ($adresse == "Je préfère prendre mes coordonnées gps."){
+$adresse= getAdress();
+}
+else{$adresse =  mysqli_real_escape_string($conn,$_POST["adresse"]);}
 
 $result = mysqli_query($conn, "SELECT * FROM `annonces`");
 
@@ -15,5 +23,5 @@ $result = mysqli_query($conn,
 	
 var_dump(mysqli_error($conn));
 
-header("Location:http://10.103.1.202/~GEYER/");
+//header("Location:http://10.103.1.202/~GEYER/");
 ?>

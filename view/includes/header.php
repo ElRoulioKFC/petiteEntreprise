@@ -15,7 +15,7 @@
 		<div class="connexion">
 			<?php
             if(!isset($_COOKIE[$_SESSION['cookie_user']])) {
-                echo '<form action="./control/js/verifCompte.php" method="post">';
+                echo '<form action="control/formulaire/verifCompte.php" method="post">';
                 echo '<p>Votre nom : <input type="text" name="nom" required="required"/></p>';
                 echo '<p>Votre mdp : <input type="text" name="mdp" required="required"/></p>';
                 echo '<p><input type="submit" value="Connexion"></p>';
@@ -39,9 +39,3 @@
 
 
 	</header>
-	<body>
-		<?php include "control/js/deconnexion.js"; //use deconnection() pour se deconnecter
-		include "control/js/coordonnees.js";// use getCoord() pour connaitre les coordonnées de l'utilisateur
-		//use coordsByAdress(adresseHtml) pour connaitre les coordonnées de l'adresse
-		// use getAdresse() pour connaitre l'adresse
-		?> 
