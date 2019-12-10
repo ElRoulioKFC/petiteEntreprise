@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $errors = [];
  
 if (!isset($_POST["description"]) ||
@@ -25,10 +26,4 @@ if (count($errors) > 0) {
 }
 
 
-
-
 ?>
-
-
-
-

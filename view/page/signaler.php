@@ -1,36 +1,38 @@
 // include la géolocalisation
 
-	<!--<input type="button" name="gps" value="Me géolocaliser"><br/>-->
 
 <form method="post" action="verifsignal.php">
-
-	<input type="button" name="gps" value="Me géolocaliser"><br/>
-
-	<label>Type d'animal :</label>
-	<select>
+<table align="center">
+	<tr><td colspan="2"><input type="button" name="gps" value="Me géolocaliser"></tr>
+	<tr>
+	<td><label>Type d'animal :</label></td>
+	<td><select>
 		<option value="chat">Chat</option>
 		<option value="chien">Chien</option>
 		<option value="autre">Autre</option>
-	</select><br/>
-
-	<label for="description">Description de l'animal :</label><br/>
-	<textarea id="description" name="description" rows="5" cols="33">
+	</select></td>
+	</tr>
+	<tr>
+	<td><label for="description">Description de l'animal :</label></td>
+	<td><textarea id="description" name="description" rows="5" cols="33">
 Description de l'animal et sa situation...
-	</textarea><br/>
+	</textarea></td>
+	</tr>
+	<tr>
+	<td><label>Photo :</label></td>
+	<td><input type="file" name="photo"></td>
+	</tr>
+	<tr>
+	<td><input type="radio" name="urgence" value="urgent">
+	<label>Urgent</label></td>
 
-	<label>Photo :</label>
-	<input type="file" name="photo"><br/>
-
-	
-	<input type="radio" name="urgence" value="urgent">
-	<label>Urgent</label> <br/>
-
-	<input type="radio" name="recup" value="recup">
-	<label>J'ai récupéré l'animal</label> <br/>
+	<td><input type="radio" name="recup" value="recup">
+	<label>J'ai récupéré l'animal</label></td>
 
 	<input type="submit" name="signaler" value="Signaler">
 
 
 </form>
+
 
 
