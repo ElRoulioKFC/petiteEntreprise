@@ -33,8 +33,7 @@ article:hover{
 	transition-duration: 0.3s;
 	border-radius: 0px 0px 5px 5px;
 }
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
+article:active{
+	background-color: rgb(254,245,226);
+	color: rgb(162,26,26);
+}
