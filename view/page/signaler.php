@@ -1,5 +1,5 @@
 // include la géolocalisation
-<form method="post">
+<form method="post" enctype="multipart/form-data">
 
 
 
@@ -17,10 +17,6 @@
 
 	</textarea><br/>
 
-	<!--<label for="nomPhoto"> nomPhoto :</label><br/>
-	<textarea id="nomPhoto" name="nomPhoto" rows="5" cols="33" required="required">
-		nomPhoto pour l'instant
-	</textarea><br/> -->
 
 
 	<label>Type d'animal :</label>
@@ -40,21 +36,20 @@ Description de l'animal et sa situation...
 
 
 
-	<label>Photo :</label>
-	<input type="file" name="photo" required="required"><br/>
-
-	<!--<label>Photo :</label>
+	
 
 	<label>Photo :</label>
-	<input type="file" name="photo"><br/>
+	<input type="file" name="photo">
+
+	<br/>
 
 	
 	<input type="radio" name="urgent" value="urgent" >
 	<label>Urgent</label> <br/>
 
 	<input type="radio" name="recup" value="recup" >
-	<label>J'ai récupéré l'animal</label> <br/>
--->
+	<label>J'ai récupéré l'animal</label> 
+	<br/>
 	<input type="submit" name="signaler" value="Signaler" >
 
 </form>
