@@ -51,7 +51,7 @@ adress = "";
 
 function getAdresse() { //retourne l'adresse
 	knowAdresse();
-	return adress;
+	document.cookie = `<?php echo $_SESSION['cookie_adresseAuto']; ?>= adress;`;
 }
 
 function knowAdresse() { //appelle la fonction pour connaitre l'adresse
