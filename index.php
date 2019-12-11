@@ -3,6 +3,7 @@
 session_start();
 $_SESSION['cookie_user'] = "user";
 setcookie($_SESSION['cookie_user'], "", time() + (86400 * 30), "/"); //on creer un cookie pour savoir si l'utilisateur est connecté
+setcookie($_SESSION['cookie_adresseAuto'], "", time() + (86400 * 30), "/"); 
 
 
 include_once('model/db.php');
