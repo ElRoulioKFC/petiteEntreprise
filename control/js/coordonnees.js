@@ -51,7 +51,7 @@ adress = "";
 
 function getAdresse() { //retourne l'adresse
 	knowAdresse();
-	return adress;
+	<?php echo $_SESSION["adresseAuto"]; ?> = adress;
 }
 
 function knowAdresse() { //appelle la fonction pour connaitre l'adresse

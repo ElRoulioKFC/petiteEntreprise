@@ -1,12 +1,26 @@
 // include la géolocalisation
+<<<<<<< Updated upstream
 <form method="post" action="control/formulaire/signaler.php">
+=======
+
+<form method="post">
+>>>>>>> Stashed changes
 
 
 	
 
-	<label for="adresse"> adresse (si le champs reste inchangé nous prendrons les coordonnées gps) :</label><br/>
+	<label for="adresse"> adresse : </label><br/>
 	<textarea id="adresse" name="adresse" rows="5" cols="33" >
-Je préfère prendre mes coordonnées gps.
+
+		<?php 
+			if ((isset($_SESSION['cookie_adresseAuto']))){
+				$_SESSION['cookie_adresseAuto'];
+			} 
+			else { echo 'tapez votre adresse ici ...';
+			}
+
+		?>
+
 	</textarea><br/>
 
 	<!--<label for="nomPhoto"> nomPhoto :</label><br/>
@@ -46,7 +60,7 @@ Description de l'animal et sa situation...
 
 	<input type="radio" name="recup" value="recup" >
 	<label>J'ai récupéré l'animal</label> <br/>
-
+-->
 	<input type="submit" name="signaler" value="Signaler" >
 
 </form>
