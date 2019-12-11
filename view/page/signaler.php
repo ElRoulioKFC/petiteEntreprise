@@ -1,5 +1,5 @@
 // include la géolocalisation
-<form method="post" action="control/formulaire/signaler.php">
+<form method="post">
 
 
 	
